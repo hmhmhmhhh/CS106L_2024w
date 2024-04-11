@@ -1,5 +1,5 @@
 #include "class.h"
-
+#include <iostream>
 /*
  * Assigment 3: Make a class!
  * Requirements:
@@ -14,5 +14,11 @@
 
 int main() {
   // initialize class and run this file
+  student s;
+  std::cout << "age: " << s.getAge() << " name: " << s.getName() << " state: " << s.getState() << std::endl;
+  student c("HM", "CS", 20);
+  std::cout << "age: " << c.getAge() << " name: " << c.getName() << " state: " << c.getState() << std::endl;
+  c.setAge(19);
+  std::cout << "age: " << c.getAge() << std::endl;
   return 0;
 }
